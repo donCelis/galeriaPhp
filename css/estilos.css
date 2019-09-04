@@ -1,0 +1,235 @@
+/*Resetear*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+/* -- Contenido -- */
+body {
+	font-size: 16px;
+	font-family: 'Roboto', serif;
+	background: #2c3e50;
+	color:#fff;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', serif;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color:#fff;
+}
+a:hover {
+	text-decoration: underline;
+}
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+}
+.titulo{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px 10px;
+}
+.izquierda {
+	float: left;
+	margin-left: 8%;
+}
+.derecha {
+	float: right;
+	margin-right: 8%;
+}
+
+/* --- Header ---*/
+header {
+	margin: 20px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* --- FOTOS --- */
+.fotos .contenedor {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.imgP {
+	width: 22%;
+	margin-bottom: 20px;
+	border: 5px solid #2980b9;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.imgP:hover {
+	border: 5px solid #bdc3c7;
+}
+.imgP a {
+	display: block;
+}
+.imgP img {
+	vertical-align: top;
+	width: 100%;
+}
+.manosIcon{
+	font-size: 30px;
+	vertical-align: middle;
+}
+header .subirBtn{
+	display: inline-block;
+	padding: 8px 15px;
+	text-decoration: none;
+	background: #e1e1e1;
+	color: #666;
+	font-size: 26px;
+}
+
+/* --- Efectos --- */
+.efectoAzul {
+	background: #3498db;
+}
+.efectoAzul img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.efectoAzul:hover img {
+	opacity: .5;
+}
+
+/* Gray Scale */
+.efectoGris img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.efectoGris:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* --- Single Foto --- */
+.foto {
+	width: 100%;
+	margin: auto;
+	max-width: 500px;
+	text-align: center;
+}
+.foto img {
+	width: 100%;
+	vertical-align: top;
+	border: 5px solid #2980b9;
+	margin-bottom: 10px;
+}
+.foto .texto {
+	max-width: 500px;
+	margin-bottom: 20px;
+	text-align: left;
+	padding: 15px;
+	background: #34495e;
+}
+.regresar {
+	display: inline-block;
+	padding: 10px 15px;
+	text-decoration: none;
+	background: #e1e1e1;
+	color: #666;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.fotoIcon{
+	font-size: 40px;
+	vertical-align: middle;
+}
+.tituloFoto{
+	display: inline-block;
+	padding: 0px 10px;
+	vertical-align: middle;
+}
+/* --- Footer --- */
+footer .derechos {
+	text-align: center;
+	color:white;
+	font-size: 16px;
+	padding: 15px 0;
+	background: #2980b9;
+}
+
+/* --- Paginacion --- */
+.paginacion {
+	width: 100%;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.paginacion a{
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	background: #e1e1e1;
+	color: #666;
+}
+
+/* --- Formulario --- */
+.formulario {
+	max-width: 500px;
+	width:90%;
+	margin: auto;
+	margin-bottom: 30px;
+	font-size: 18px;
+	background: #34495e;
+	padding: 25px;
+	border: 5px solid #2980b9;
+}
+.formulario label {
+	display: block;
+	margin-bottom: 10px;
+}
+.formulario .error {
+	border: 1px solid red;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+.formulario input[type="text"],
+.formulario textarea {
+	width: 100%;
+	margin-bottom: 30px;
+	color: #34495e;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.formulario input[type="file"]{
+	color: white;
+	margin-bottom: 30px;
+}
+.formulario input[type="text"],
+.formulario textarea {
+	padding: 10px;
+	font-family: 'Roboto', serif;
+	border:4px solid rgba(127, 140, 141,.5);
+	font-size: 18px;
+}
+.formulario textarea {
+	min-height: 76px;
+	max-height: 150px; 
+	max-width: 100%;
+	min-width: 100%;
+}
+.formulario .iTitulo:focus,
+.formulario .iTitulo:focus {
+	border:4px solid #3498db;
+}
+.formulario .submit{
+	text-align: center;
+	padding:15px;
+	cursor: pointer;
+  background: #e1e1e1;
+  color: #666;
+  border: none;
+  font-size: 16px;
+}
